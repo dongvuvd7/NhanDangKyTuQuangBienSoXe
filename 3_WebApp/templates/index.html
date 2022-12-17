@@ -1,0 +1,104 @@
+{% extends 'layout.html' %} {% block body %}
+<div class="main-container">
+    <div class="left-container">
+        <div class="container">
+            <br />
+            <h4>THÔNG TIN BÃI ĐỖ XE</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Tổng số chỗ</th>
+                        <th scope="col">Số chỗ còn trống</th>
+                        <th scope="col">Tổng lượt gửi trong ngày(vé ngày/vé đã đăng ký)</th>
+                        <th scope="col">Tổng phí gửi xe đã thu trong ngày</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{{ parking_infor[0] }}</th>
+                        <td style="color: green">{{ parking_infor[1] }}</td>
+                        <td style="color: blue">{{ parking_infor[2] }} ({{ parking_infor[3] }}/{{ parking_infor[4] }})</td>
+                        <td style="color: red">{{ parking_infor[5] }} VND</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form action="#" method="POST" enctype="multipart/form-data" id="formIn">
+                <div class="input-group">
+                    <input type="hidden" name="form_type" value="formIn" />
+                    <input type="file" class="form-control" name="image_name" required />
+                    <input type="submit" name="submitin" value="Vào" class="btn btn-outline-secondary" />
+                    <input type="submit" name="submitoutt" value="Ra" class="btn btn-outline-secondary" />
+                </div>
+            </form>
+        </div>
+
+        {% if upload %}
+        <div class="container">
+            <br /><br />
+            <table class="table-show-img-input">
+                <tr>
+                    <td>
+                        <img class="rounded float-left img-fluid" src="/static/upload/{{ upload_image }}" alt="" style="max-height: 200px;" />
+                    </td>
+                    <td>
+                        <img class="rounded float-right img-fluid" src="/static/predict/{{ upload_image }}" alt="" style="max-height: 200px;" />
+                    </td>
+                </tr>
+            </table>
+            <br />
+            <table style="border: solid black; width: 100%">
+                <tr style="border: solid gray">
+                    <th>Ảnh nhận diện biển số</th>
+                    <th>Biển số</th>
+                    <th>Loại vé</th>
+                    <th>Chi phí</th>
+                </tr>
+                <tr style="border: solid gray">
+                    <td>
+                        <img class="img-fluid" src="/static/roi/{{ upload_image }}" alt="" />
+                    </td>
+                    <td>
+                        <h3 class="display-10" style="color: blue">{{ text }}</h3>
+                    </td>
+                    <!-- Nếu car_owner[5] rỗng thì hiển thị 'vé ngày' -->
+                    {% if car_owner %}
+                        <td><h5 class="display-10" style="color: green">{{ car_owner[5] }}</h5></td>
+                    {% else %}
+                        <td><h5 class="display-10" style="color: green">Vé ngày</h5></td>
+                    {% endif %}
+
+                    <td><h5 class="display-10" style="color: red">{{ cost }} VNĐ</h5></td>
+                </tr>
+            </table>
+
+            <br />
+            <h4>THÔNG TIN CHỦ XE</h4>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Họ và tên</th>
+                        <th scope="col">CMND/CCCD</th>
+                        <th scope="col">Biển xe</th>
+                        <th scope="col">Mã vé</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">{{ car_owner[1] }}</th>
+                        <td>{{ car_owner[2] }}</td>
+                        <td>{{ car_owner[3] }}</td>
+                        <td>{{ car_owner[4] }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div></div>
+        </div>
+        {% endif %}
+    </div>
+
+</div>
+
+{% endblock %}

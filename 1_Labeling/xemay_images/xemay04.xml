@@ -1,0 +1,26 @@
+<annotation>
+	<folder>xemay_images</folder>
+	<filename>xemay04.jpg</filename>
+	<path>C:\Users\LEGION\Desktop\Do_an\car_number\1_Labeling\xemay_images\xemay04.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2000</width>
+		<height>1500</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>number_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>823</xmin>
+			<ymin>700</ymin>
+			<xmax>1112</xmax>
+			<ymax>867</ymax>
+		</bndbox>
+	</object>
+</annotation>

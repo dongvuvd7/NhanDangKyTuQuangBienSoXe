@@ -1,0 +1,26 @@
+<annotation>
+	<folder>car_long</folder>
+	<filename>7340.jpg</filename>
+	<path>D:\python_work\car_number\1_Labeling\car_long\car_long\7340.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>472</width>
+		<height>303</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>number_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>141</xmin>
+			<ymin>95</ymin>
+			<xmax>248</xmax>
+			<ymax>119</ymax>
+		</bndbox>
+	</object>
+</annotation>

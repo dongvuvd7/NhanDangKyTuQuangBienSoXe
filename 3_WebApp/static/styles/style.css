@@ -1,0 +1,17 @@
+.main-container{
+    display: flex;
+}
+
+.left-container{
+    width: 100%;
+}
+
+.right-container{
+    width: 50%;
+}
+
+.table-show-img-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

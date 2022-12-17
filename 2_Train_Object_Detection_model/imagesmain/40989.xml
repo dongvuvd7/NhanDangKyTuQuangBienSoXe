@@ -1,0 +1,26 @@
+<annotation>
+	<folder>car_long</folder>
+	<filename>40989.jpg</filename>
+	<path>D:\python_work\car_number\1_Labeling\car_long\car_long\40989.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>472</width>
+		<height>303</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>number_plate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>254</xmin>
+			<ymin>215</ymin>
+			<xmax>353</xmax>
+			<ymax>238</ymax>
+		</bndbox>
+	</object>
+</annotation>
