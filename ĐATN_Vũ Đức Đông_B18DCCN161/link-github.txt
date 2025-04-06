@@ -1,0 +1,3 @@
+Code: https://github.com/dongvuvd7/NhanDangKyTuQuangBienSoXe
+Model: https://drive.google.com/file/d/1edS9AIdV11XFIXBngyD01NWmcKtM3SMA/view?usp=sharing
+Tóm tắt mô hình: https://docs.google.com/document/d/1tFpUU5FkwL5hFbHJZsdR_Yizb5NhONaW8OnHiV7ffak/edit
